@@ -3,6 +3,38 @@ import matplotlib.pyplot as plt
 from sklearn.datasets import load_iris
 from sklearn.cluster import KMeans
 
+def kmeans(X, K, max_iters=100):
+    centroids = X[:K]
+
+    for _ in range(max_iters):
+        # Assign each data point to the nearest centroid
+        expanded_x = X[:, np.newaxis]
+        euc_dist = np.linalg.norm(expanded_x - centroids, axis=2)
+        labels = np.argmin(euc_dist, axis=1)
+
+        # Update the centroids based on the assigned point
+        new_centroids = np.array([X[labels == k].mean(axis=0) for k in range(K)])
+
+        # If the centroids did not change, stop iterating
+        if np.all(centroids == new_centroids):
+            break
+
+        centroids = new_centroids
+
+    return labels, centroids
+
+# Load the Iris dataset
+X = load_iris().data
+
+# K-means without using scikit-learn
+K = 3
+labels_custom, centroids_custom = kmeans(X, K)
+print("Labels without using sklearn (K-means):", labels_custom)
+print("Centroids (K-means) without using sklearn:", centroids_custom)
+
+
+USING SKLEARN
+
 # Load the Iris dataset
 iris = load_iris()
 X = iris.data
