@@ -1,4 +1,4 @@
-a)  Min-Max Algorithm
+# a)  Min-Max Algorithm
 
 def minmax(depth, nodeIndex, maximizingPlayer, values, alpha, beta):
     if depth == 3:
@@ -25,7 +25,7 @@ result = minmax(0, 0, True, values, float('-inf'), float('inf'))
 print("The optimal value is:", result)
 
 
-b)
+# b)
 
 import seaborn as sns
 import matplotlib.pyplot as plt

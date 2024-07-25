@@ -7,7 +7,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import LabelEncoder
 
 # Load the dataset
-df = pd.read_csv(r"C:\Users\Ramachandra\OneDrive\Desktop\ML Lab\Titanic-Dataset.csv")
+df = pd.read_csv(r"Titanic-Dataset.csv")
 df = df[['Survived', 'Pclass', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked']]
 
 # Handle missing values

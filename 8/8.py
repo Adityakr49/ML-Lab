@@ -33,7 +33,7 @@ print("Labels without using sklearn (K-means):", labels_custom)
 print("Centroids (K-means) without using sklearn:", centroids_custom)
 
 
-USING SKLEARN
+# USING SKLEARN
 
 # Load the Iris dataset
 iris = load_iris()

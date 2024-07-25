@@ -6,7 +6,7 @@ from sklearn.metrics import accuracy_score, classification_report
 from sklearn.preprocessing import OneHotEncoder
 
 # Load the weather dataset from the local file
-file_path = r"C:\Users\Ramachandra\OneDrive\Desktop\ML Lab\weather_forecast.csv"
+file_path = r"weather_forecast.csv"
 df = pd.read_csv(file_path)
 
 # Display the first few rows of the dataset
@@ -41,6 +41,23 @@ report_id3 = classification_report(y_test, y_pred_id3)
 print("ID3 Algorithm Results:")
 print(f"Accuracy: {accuracy_id3}")
 print(f"Classification Report:\n{report_id3}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Perform cross-validation for ID3
 cv_scores_id3 = cross_val_score(clf_id3, X_encoded, y, cv=5)

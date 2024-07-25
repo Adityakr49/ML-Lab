@@ -1,1 +1,0 @@
-11 Write a Program to develop simple single layer perceptron to implement AND, OR Boolean functions.

@@ -1,4 +1,4 @@
-a)  Min-Max Algorithm
+# a)  Min-Max Algorithm
 
 def minmax(depth, nodeIndex, maximizingPlayer, values, alpha, beta, path):
     if depth == 3:
@@ -32,7 +32,7 @@ print("The optimal value is:", optimal_value)
 print("The path taken is:", optimal_path)
 
 
-b) Heat Map
+# b) Heat Map
 
 import pandas as pd
 import matplotlib.pyplot as plt

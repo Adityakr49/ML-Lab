@@ -37,7 +37,7 @@ optimal_value, optimal_path = alphabeta(0, 0, True, values, float('-inf'), float
 print("The optimal value is:", optimal_value)
 print("The path taken is:", optimal_path)
 
-b)Boxplot
+# b) Boxplot
 
 import pandas as pd
 import matplotlib.pyplot as plt

@@ -1,4 +1,4 @@
-a) Alpha-Beta Pruning Algorithm
+# a) Alpha-Beta Pruning Algorithm
 
 def alphabeta(depth, nodeIndex, maximizingPlayer, values, alpha, beta):
     if depth == 3:
@@ -30,7 +30,7 @@ values = [3, 5, 2, 9, 12, 5, 23, 23]
 result = alphabeta(0, 0, True, values, float('-inf'), float('inf'))
 print("The optimal value is:", result)
 
-b)
+# b)
 
 import matplotlib.pyplot as plt
 import seaborn as sns

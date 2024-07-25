@@ -1,4 +1,4 @@
-a)   A* Algorithm
+# a)   A* Algorithm
 
 import heapq
 
@@ -78,7 +78,7 @@ print("A* Search Path:", path)
 
 
 
-b)
+# b)
 
 import matplotlib.pyplot as plt
 import numpy as np
